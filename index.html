@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva de Materias</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdfdfd;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #2b4f81;
+    }
+
+    .anio {
+      margin-bottom: 40px;
+    }
+
+    .materias {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .materia {
+      background: #e0f0ff;
+      border: 2px solid #3399cc;
+      border-radius: 10px;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .materia:hover {
+      background: #c2e0ff;
+    }
+
+    #detalle {
+      margin-top: 30px;
+      padding: 15px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      background: #f1f1f1;
+      border-left: 6px solid #3399cc;
+      border-radius: 8px;
+      font-size: 16px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Malla Interactiva de la Carrera</h1>
+
+  <div class="anio">
+    <h2>Primer Año</h2>
+    <div class="materias">
+      <div class="materia" onclick="mostrar('Historia de la Cultura I')">Historia de la Cultura I</div>
+      <div class="materia" onclick="mostrar('La Tecnología y sus Usos')">La Tecnología y sus Usos</div>
+      <div class="materia" onclick="mostrar('Literatura y Pensamiento')">Literatura y Pensamiento</div>
+      <div class="materia" onclick="mostrar('Introducción al Medio Audiovisual')">Introducción al Medio Audiovisual</div>
+      <div class="materia" onclick="mostrar('Introducción a la Comunicación')">Introducción a la Comunicación</div>
+    </div>
+  </div>
+
+  <div class="anio">
+    <h2>Segundo Año</h2>
+    <div class="materias">
+      <div class="materia" onclick="mostrar('Historia de la Cultura II')">Historia de la Cultura II</div>
+      <div class="materia" onclick="mostrar('Historia del Cine')">Historia del Cine</div>
+      <div class="materia" onclick="mostrar('Pensamiento Social Argentino y Latinoamericano')">Pensamiento Social Argentino y Latinoamericano</div>
+      <div class="materia" onclick="mostrar('Fundamentos de la Programación I')">Fundamentos de la Programación I</div>
+      <div class="materia" onclick="mostrar('Fundamentos de la Programación II')">Fundamentos de la Programación II</div>
+      <div class="materia" onclick="mostrar('Cultura Lúdica: Jugar es Humano')">Cultura Lúdica: Jugar es Humano</div>
+      <div class="materia" onclick="mostrar('Historia de los Videojuegos')">Historia de los Videojuegos</div>
+      <div class="materia" onclick="mostrar('Gestión de Proyectos')">Gestión de Proyectos</div>
+      <div class="materia" onclick="mostrar('Diseño Lúdico I')">Diseño Lúdico I</div>
+    </div>
+  </div>
+
+  <div class="anio">
+    <h2>Tercer Año</h2>
+    <div class="materias">
+      <div class="materia" onclick="mostrar('Taller de Diseño y Animación en 2D')">Taller de Diseño y Animación en 2D</div>
+      <div class="materia" onclick="mostrar('Juegos Serios I')">Juegos Serios I</div>
+      <div class="materia" onclick="mostrar('Industria del Videojuego')">Industria del Videojuego</div>
+      <div class="materia" onclick="mostrar('Taller de Diseño UIX/GUI')">Taller de Diseño UIX/GUI</div>
+      <div class="materia" onclick="mostrar('Aspectos Legales del Desarrollo de Videojuegos')">Aspectos Legales del Desarrollo de Videojuegos</div>
+      <div class="materia" onclick="mostrar('Producción y Prácticas Lúdicas I')">Producción y Prácticas Lúdicas I</div>
+      <div class="materia" onclick="mostrar('Taller de Prototipado Digital')">Taller de Prototipado Digital</div>
+      <div class="materia" onclick="mostrar('Diseño Lúdico II')">Diseño Lúdico II</div>
+    </div>
+  </div>
+
+  <div class="anio">
+    <h2>Cuarto Año</h2>
+    <div class="materias">
+      <div class="materia" onclick="mostrar('Economía de la Cultura')">Economía de la Cultura</div>
+      <div class="materia" onclick="mostrar('Taller Introductorio al Diseño en 3D')">Taller Introductorio al Diseño en 3D</div>
+      <div class="materia" onclick="mostrar('Q.A. (\"Control de Calidad\")')">Q.A. ("Control de Calidad")</div>
+      <div class="materia" onclick="mostrar('Producción y Prácticas Lúdicas II')">Producción y Prácticas Lúdicas II</div>
+      <div class="materia" onclick="mostrar('Internacionalización de Proyectos')">Internacionalización de Proyectos</div>
+      <div class="materia" onclick="mostrar('Marketing Digital')">Marketing Digital</div>
+      <div class="materia" onclick="mostrar('Narrativas Transmedia')">Narrativas Transmedia</div>
+      <div class="materia" onclick="mostrar('Taller de Desarrollo de Entornos Virtuales')">Taller de Desarrollo de Entornos Virtuales</div>
+      <div class="materia" onclick="mostrar('Juegos Serios II')">Juegos Serios II</div>
+      <div class="materia" onclick="mostrar('Modelos Organizacionales')">Modelos Organizacionales</div>
+    </div>
+  </div>
+
+  <div class="anio">
+    <h2>Quinto Año</h2>
+    <div class="materias">
+      <div class="materia" onclick="mostrar('Inglés I')">Inglés I</div>
+      <div class="materia" onclick="mostrar('Inglés II')">Inglés II</div>
+      <div class="materia" onclick="mostrar('Ética y Liderazgo')">Ética y Liderazgo</div>
+      <div class="materia" onclick="mostrar('Planificación de Negocios')">Planificación de Negocios</div>
+      <div class="materia" onclick="mostrar('Metodología de la Investigación I')">Metodología de la Investigación I</div>
+      <div class="materia" onclick="mostrar('Metodología de la Investigación II')">Metodología de la Investigación II</div>
+      <div class="materia" onclick="mostrar('Taller Proyectual')">Taller Proyectual</div>
+    </div>
+  </div>
+
+  <div id="detalle">Haz clic en una materia para ver sus correlativas.</div>
+
+  <script>
+    const correlativas = {
+      "Historia de la Cultura I": "Correlativa: Ninguna",
+      "La Tecnología y sus Usos": "Correlativa: Ninguna",
+      "Literatura y Pensamiento": "Correlativa: Ninguna",
+      "Introducción al Medio Audiovisual": "Correlativa: Ninguna",
+      "Introducción a la Comunicación": "Correlativa: Ninguna",
+      "Historia de la Cultura II": "Correlativa: Historia de la Cultura I",
+      "Historia del Cine": "Correlativa: Ninguna",
+      "Pensamiento Social Argentino y Latinoamericano": "Correlativa: Ninguna",
+      "Fundamentos de la Programación I": "Correlativa: La Tecnología y sus Usos",
+      "Fundamentos de la Programación II": "Correlativa: Fundamentos de la Programación I",
+      "Cultura Lúdica: Jugar es Humano": "Correlativa: Ninguna",
+      "Historia de los Videojuegos": "Correlativa: Historia del Cine",
+      "Gestión de Proyectos": "Correlativa: Ninguna",
+      "Diseño Lúdico I": "Correlativa: Ninguna",
+      "Taller de Diseño y Animación en 2D": "Correlativa: Ninguna",
+      "Juegos Serios I": "Correlativa: Cultura Lúdica: Jugar es Humano",
+      "Industria del Videojuego": "Correlativa: Ninguna",
+      "Taller de Diseño UIX/GUI": "Correlativa: Taller de Diseño y Animación en 2D",
+      "Aspectos Legales del Desarrollo de Videojuegos": "Correlativa: Gestión de Proyectos",
+      "Producción y Prácticas Lúdicas I": "Correlativa: Diseño Lúdico I",
+      "Taller de Prototipado Digital": "Correlativa: Fundamentos de la Programación I",
+      "Diseño Lúdico II": "Correlativa: Diseño Lúdico I",
+      "Economía de la Cultura": "Correlativa: Ninguna",
+      "Taller Introductorio al Diseño en 3D": "Correlativa: Taller de Diseño UIX/GUI",
+      "Q.A. (\"Control de Calidad\")": "Correlativa: Taller de Prototipado Digital",
+      "Producción y Prácticas Lúdicas II": "Correlativa: Producción y Prácticas Lúdicas I",
+      "Internacionalización de Proyectos": "Correlativa: Aspectos Legales del Desarrollo de Videojuegos",
+      "Marketing Digital": "Correlativa: Ninguna",
+      "Narrativas Transmedia": "Correlativa: Taller Introductorio al Diseño en 3D",
+      "Taller de Desarrollo de Entornos Virtuales": "Correlativa: Q.A. (\"Control de Calidad\")",
+      "Juegos Serios II": "Correlativa: Juegos Serios I",
+      "Modelos Organizacionales": "Correlativa: Internacionalización de Proyectos",
+      "Inglés I": "Correlativa: Ninguna",
+      "Inglés II": "Correlativa: Inglés I",
+      "Ética y Liderazgo": "Correlativa: Modelos Organizacionales",
+      "Planificación de Negocios": "Correlativa: Producción y Prácticas Lúdicas II",
+      "Metodología de la Investigación I": "Correlativa: Ninguna",
+      "Metodología de la Investigación II": "Correlativa: Metodología de la Investigación I",
+      "Taller Proyectual": "Correlativa: Producción y Prácticas Lúdicas II y Narrativas Transmedia y Taller de Desarrollo de Entornos Virtuales"
+    };
+
+    function mostrar(nombre) {
+      const info = correlativas[nombre] || "No se encontró información";
+      document.getElementById("detalle").innerText = `${nombre} — ${info}`;
+    }
+  </script>
+
+</body>
+</html>
 
